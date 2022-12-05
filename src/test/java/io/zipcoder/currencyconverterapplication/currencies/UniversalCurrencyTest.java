@@ -16,7 +16,7 @@ public class UniversalCurrencyTest implements CurrencyTestInterface {
         ConvertableCurrency currency = new UniversalCurrency();
 
         // when
-        Double actual = currency.convert(currencyType);
+        Double actual = currency.convertToTargetAmt(currencyType);
 
         // then
         Assert.assertEquals(expected, actual, .0001);

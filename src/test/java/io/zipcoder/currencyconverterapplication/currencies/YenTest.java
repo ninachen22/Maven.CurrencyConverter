@@ -16,7 +16,7 @@ public class YenTest {
         ConvertableCurrency currency = new Yen();
 
         // when
-        Double actual = currency.convert(currencyType);
+        Double actual = currency.convertToTargetAmt(currencyType);
 
         // then
         Assert.assertEquals(expected, actual, .0001);

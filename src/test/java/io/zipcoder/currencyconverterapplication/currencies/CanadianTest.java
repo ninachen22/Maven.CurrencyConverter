@@ -17,7 +17,7 @@ public class CanadianTest {
         ConvertableCurrency currency = new CanadianDollar();
 
         // when
-        Double actual = currency.convert(currencyType);
+        Double actual = currency.convertToTargetAmt(currencyType);
 
         // then
         Assert.assertEquals(expected, actual, .0001);

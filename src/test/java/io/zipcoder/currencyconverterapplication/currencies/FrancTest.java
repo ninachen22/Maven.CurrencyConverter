@@ -17,7 +17,7 @@ public class FrancTest {
         ConvertableCurrency currency = new Franc();
 
         // when
-        Double actual = currency.convert(currencyType);
+        Double actual = currency.convertToTargetAmt(currencyType);
 
         // then
         Assert.assertEquals(expected, actual, .0001);

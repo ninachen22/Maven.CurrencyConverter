@@ -16,7 +16,7 @@ public class AustralianDollarTest implements CurrencyTestInterface {
         ConvertableCurrency currency = new AustralianDollar();
 
         // when
-        Double actual = currency.convert(currencyType);
+        Double actual = currency.convertToTargetAmt(currencyType);
 
         // then
         Assert.assertEquals(expected, actual);
